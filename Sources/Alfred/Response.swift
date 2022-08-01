@@ -22,7 +22,7 @@ public struct Response: Encodable {
 
     static var encoder: JSONEncoder = {
         let encoder = JSONEncoder()
-        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+        encoder.outputFormatting = [.prettyPrinted]
         return encoder
     }()
 }
